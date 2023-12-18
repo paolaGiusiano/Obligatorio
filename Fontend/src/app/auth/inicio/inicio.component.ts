@@ -36,7 +36,7 @@ export class InicioComponent implements OnInit {
 
   inicio() {
     if (this.inicioForm.valid) {   
-      this.router.navigate(['/dashboard']); // Update the path accordingly
+      this.router.navigate(['/login']); // Update the path accordingly
     } else {
       this.inicioForm.markAllAsTouched();
       alert('Error al ingresar los datos.');
