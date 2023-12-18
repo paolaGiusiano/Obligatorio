@@ -5,6 +5,7 @@ import { InicioComponent } from './auth/inicio/inicio.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { RegistrationComponent } from './auth/registration/registration.component';
 import { OutOfDateComponent } from './pages/out-of-date/out-of-date.component';
+import { RegistroExitosoComponent } from './auth/registro-exitoso/registro-exitoso.component';
 
 /*const routes: Routes = [
   { path: '', redirectTo: '/inicio', pathMatch: 'full' },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'registrar', component: RegistrationComponent },
   { path: 'out-of-date', component: OutOfDateComponent },
+  { path: 'registro-exitoso', component: RegistroExitosoComponent },
   { path: '**', redirectTo: 'not-found', pathMatch: 'full' }
 ];
 

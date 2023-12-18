@@ -70,7 +70,7 @@ export class LoginComponent implements OnInit {
   }*/
 
   login(){
-    if(this.loginForm.valid){
+   /* if(this.loginForm.valid){
       this.loginError="";
       this.loginService.login(this.loginForm.value as LoginRequest).subscribe({
 
@@ -81,18 +81,23 @@ export class LoginComponent implements OnInit {
           console.error(errorData);
           this.loginError=errorData;
         },
-        /*complete: () => {
-          console.info("Login completo");
-          this.router.navigateByUrl('/registrar');
-          this.loginForm.reset();
-        }*/
+
       })
 
     }
     else{
       this.loginForm.markAllAsTouched();
       alert("Error al ingresar los datos.");
+    }*/
+
+
+    if (this.loginForm.valid) {   
+      this.router.navigate(['/registro-exitoso']); // Update the path accordingly
+    } else {
+      this.loginForm.markAllAsTouched();
+      alert('Error al ingresar los datos.');
     }
+
   }
 
  // toggleFechaVencimiento() {}
